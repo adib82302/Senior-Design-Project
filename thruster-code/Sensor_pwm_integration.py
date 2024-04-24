@@ -15,6 +15,9 @@ hat = adafruit_pca9685.PCA9685(i2c, address=0x40)  # Address for PCA9685
 kit = ServoKit(channels=16, i2c=i2c, address=0x40)  # Same address as PCA9685, handled by ServoKit
 sensor = adafruit_bno055.BNO055_I2C(i2c, address=0x28)  # Default address for BNO055
 
+# Initialize serial connection
+ser = serial.Serial('/dev/ttyAMA2', 115200)  # Ensure to match your device port and baud rate
+
 # Motor channels
 left_channel = 15
 right_channel = 14
