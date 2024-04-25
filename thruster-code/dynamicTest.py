@@ -73,6 +73,7 @@ def stopY():
   kit.continuous_servo[left_v_channel].throttle = initial_left_v 
   kit.continuous_servo[right_v_channel].throttle = initial_right_v
 
+time.sleep(5)
 forward()
 time.sleep(5)
 stopX()
@@ -90,10 +91,10 @@ time.sleep(3)
 stopX()
 time.sleep(1)
 descend()
-time.sleep(2.5)
+time.sleep(6)
 stopY()
-time.sleep(1)
+time.sleep(2)
 ascend()
-time.sleep(2.5)
+time.sleep(5)
 stopY()
 time.sleep(1)
