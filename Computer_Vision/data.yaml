@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 1
+names: ['Cube']
+
+roboflow:
+  workspace: underwater-cube
+  project: auv-ne2cz
+  version: 4
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/underwater-cube/auv-ne2cz/dataset/4
